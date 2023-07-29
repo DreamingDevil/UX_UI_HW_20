@@ -1,0 +1,11 @@
+.container-fluid .carousel {
+  margin: 35px auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 7px;
+}
+
+.carousel-item {
+  max-height: 500px;
+  max-width: auto;
+}
