@@ -1,11 +1,49 @@
+* {
+  cursor: crosshair;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.navbar .nav-link {
+  font-family: "Noto Serif";
+}
+.navbar .nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  cursor: pointer;
+}
+.navbar .nav-link:active {
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+.navbar .dropdown-item {
+  font-family: "Noto Serif";
+}
+.navbar img {
+  max-height: 64px;
+}
+
+.jumbotron .display-4 {
+  font-family: "Noto Serif";
+}
+
 .container-fluid .carousel {
   margin: 35px auto;
   background-color: white;
   padding: 25px;
   border-radius: 7px;
 }
-
 .carousel-item {
-  max-height: 500px;
+  max-height: 250px;
   max-width: auto;
+}
+
+span {
+  line-height: 100%;
+  width: .7em;
+  font-size: 125%;
+  font-family: "Noto Serif";
 }
