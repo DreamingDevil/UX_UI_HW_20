@@ -45,12 +45,8 @@ h4 {
 
 .navbar .logo img {
   height: 50px;
-  margin-left: 100px;
 }
 
-.navbar .social-links {
-  margin-right: 100px;
-}
 
 .navbar .social-links a img {
   height: 24px;
@@ -72,7 +68,7 @@ h4 {
 .jumbotron {
   text-align: center;
   padding: 7.5rem 0;
-  background-image: url(../images/usda_case_study_hero_background.png);
+  background-image: url(images/usda_case_study_hero_background.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
