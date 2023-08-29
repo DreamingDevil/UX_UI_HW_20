@@ -1,35 +1,98 @@
+/* HTML CSS */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+}
+
+/* Background of progress bar */
+.progress-bar-background {
+  width: 100%;
+  height: 5px;
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+/* The progress bar */
+.progress-bar {
+  height: 5px;
+  background: #253551;
+  width: 0%;
+}
+
+/* Font CSS */
+
+h3 {
+  font-size:18px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+h4 {
+  font-size: 16px;
+}
+
 /* Navigation Bar CSS */
 .navbar {
   margin-top: 10px;
   margin-bottom: 10px;
+  background-color: rgba(255, 255, 255 0.6) !important;
 }
 
 .navbar .logo img {
-  height: 44px;
+  height: 50px;
+  margin-left: 100px;
+}
+
+.navbar .social-links {
+  margin-right: 100px;
 }
 
 .navbar .social-links a img {
   height: 24px;
-  margin: 0.125rem;
+  margin: 0.5rem;
 }
 
 .navbar .nav-links a {
-  margin: 1rem;
+  margin: 1.5rem;
   text-decoration: none;
   color: #000000;
 }
 
 .navbar .nav-links a:hover {
-  margin: 1rem;
   text-decoration: underline;
-  color: #000000;
 }
 
 /* Jumbotron CSS */
 
 .jumbotron {
   text-align: center;
-  padding: 100px 0;
+  padding: 7.5rem 0;
+}
+
+/* Table of Contents CSS */
+.tableofContents {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.tableofContents .card img {
+  width: 64px;
+}
+
+.tableofContents .card-body .card-text {
+  text-align: center;
+}
+
+.card {
+  border: none !important;
 }
 
 /* Full Screen Content Sections */
@@ -41,6 +104,10 @@
   justify-content: flex-start;
   align-items: center;
   padding: 60px 0;
+}
+
+.left-align {
+  text-align: left;
 }
 
 .list-group-horizontal {
@@ -58,19 +125,46 @@
   justify-content: center;
   margin: 0 auto;
 }
-    .full-screen-section .container {
-      text-align: center;
-    }
-    .full-screen-section .centered-image {
-      display: block;
-      margin: 0 auto;
-      width: 1080px;
-    }
 
-  .full-screen-section:nth-child(even) {
-    background-color: #ffffff;
-  }
+.full-screen-section .container {
+  text-align: center;
+  width:60vw;
+}
 
-  .full-screen-section:nth-child(odd) {
-    background-color: #E9ECEF;
-  }
+.full-screen-section:nth-child(even) {
+  background-color: #E9ECEF;
+}
+
+.full-screen-section:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Footer Bar */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #c6c6c6;
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+}
+
+footer div a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+footer div a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
