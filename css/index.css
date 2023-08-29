@@ -1,7 +1,38 @@
+/* Navigation Bar CSS */
+.navbar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.navbar .logo img {
+  height: 44px;
+}
+
+.navbar .social-links a img {
+  height: 24px;
+  margin: 0.125rem;
+}
+
+.navbar .nav-links a {
+  margin: 1rem;
+  text-decoration: none;
+  color: #000000;
+}
+
+.navbar .nav-links a:hover {
+  margin: 1rem;
+  text-decoration: underline;
+  color: #000000;
+}
+
+/* Jumbotron CSS */
+
 .jumbotron {
   text-align: center;
   padding: 100px 0;
 }
+
+/* Full Screen Content Sections */
 
 .full-screen-section {
   min-height: 80vh;
