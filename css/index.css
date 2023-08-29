@@ -72,7 +72,7 @@ h4 {
 .jumbotron {
   text-align: center;
   padding: 7.5rem 0;
-  background-image: url(/images/usda_case_study_hero_background.png);
+  background-image: url(images/usda_case_study_hero_background.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
