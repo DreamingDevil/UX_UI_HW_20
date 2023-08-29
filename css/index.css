@@ -171,3 +171,22 @@ footer div a:hover {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 600px) {
+  .navbar .nav-links a{
+    margin: 0.5rem;
+  }
+
+  .tableofContents {
+    display:none;
+  }
+
+  .social-links {
+    display:none;
+  }
+
+  .full-screen-section .container {
+    text-align: center;
+    width:95vw;
+  }
+
+}
