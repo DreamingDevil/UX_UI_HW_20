@@ -72,6 +72,12 @@ h4 {
 .jumbotron {
   text-align: center;
   padding: 7.5rem 0;
+  background-image: url(/images/usda_case_study_hero_background.png);
+  background-size: cover;
+}
+
+.jumbotron .container h1, .jumbotron,.jumbotron .container p {
+  color: #ffffff;
 }
 
 /* Table of Contents CSS */
