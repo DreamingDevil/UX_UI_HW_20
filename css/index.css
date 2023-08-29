@@ -4,7 +4,7 @@ html {
 }
 
 body {
-
+  scroll-behavior: smooth;
 }
 
 /* Background of progress bar */
@@ -84,6 +84,12 @@ h4 {
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+
+.tableofContents .card:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: blue;
 }
 
 .tableofContents .card img {
@@ -171,6 +177,40 @@ footer div a:hover {
   cursor: pointer;
 }
 
+/* Table of Contents Overlay CSS */
+
+.overlayTableofContents {
+  position: fixed;
+  top: 20vh;
+  left: 0;
+  width: 15%;
+  overflow-y: auto;
+  /* background-color: rgba(255, 255, 255, 0.4);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px; */
+  z-index: 999;
+  opacity: 0; /* Set initial opacity to 0 */
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.overlayTableofContents.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlayTableofContents ul {
+  margin-top: 25px;
+}
+
+.overlayTableofContents ul li{
+  list-style: none;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* Media Queries */
+
 @media only screen and (max-width: 600px) {
   .navbar .nav-links a{
     margin: 0.5rem;
@@ -184,9 +224,12 @@ footer div a:hover {
     display:none;
   }
 
+  .jumbrotron {
+    padding: 2.5rem 0 
+  }
+
   .full-screen-section .container {
     text-align: center;
     width:95vw;
   }
-
 }

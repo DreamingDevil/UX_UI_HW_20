@@ -23,10 +23,35 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function navigateTo(target) {
-  // Implement your navigation logic here
-  // For example: scroll to the target section
   const element = document.querySelector(target);
   if (element) {
     element.scrollIntoView({ behavior: 'smooth' });
   }
 }
+
+  const navigationCards = document.querySelectorAll('.tableofContents .card');
+  navigationCards.forEach(card => {
+    card.addEventListener('click', scrollToSection);
+  });
+
+  function scrollToSection(event) {
+    const targetSectionId = event.currentTarget.getAttribute('data-scroll-target');
+    const targetSection = document.getElementById(targetSectionId);
+
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const overlay = document.getElementById("overlayTableofContents");
+    const projectOverview = document.getElementById("project-overview");
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY >= projectOverview.offsetTop) {
+        overlay.classList.add("visible");
+      } else {
+        overlay.classList.remove("visible");
+      }
+    });
+  });
