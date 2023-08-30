@@ -67,7 +67,7 @@ h4 {
 
 .jumbotron {
   text-align: center;
-  padding: 7.5rem 0;
+  padding: 5.5rem 0;
   background-image: url(../images/usda_case_study_hero_background.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -107,7 +107,7 @@ h4 {
 /* Full Screen Content Sections */
 
 .full-screen-section {
-  min-height: 80vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
