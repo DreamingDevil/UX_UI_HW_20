@@ -89,7 +89,7 @@ h4 {
 .tableofContents .card:hover {
   cursor: pointer;
   text-decoration: underline;
-  color: blue;
+  color: #0056B3;
 }
 
 .tableofContents .card img {
@@ -215,6 +215,10 @@ footer div a:hover {
   .navbar .nav-links a{
     margin: 0.5rem;
   }
+
+.overlayTableofContents {
+  display: none;
+}
 
   .tableofContents {
     display:none;
