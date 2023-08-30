@@ -45,7 +45,7 @@ function navigateTo(target) {
 
   document.addEventListener("DOMContentLoaded", function () {
     const overlay = document.getElementById("overlayTableofContents");
-    const projectOverview = document.getElementById("project-overview");
+    const projectOverview = document.getElementById("project-scope");
 
     window.addEventListener("scroll", function () {
       if (window.scrollY >= projectOverview.offsetTop) {
